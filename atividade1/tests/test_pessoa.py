@@ -12,8 +12,11 @@ def criar_pessoa():
                          Endereco("Rua A", "15", "N/D", "5673932", "Cidade A", Unidade_Federativa.BAHIA))
     return primeira_pessoa
 
-def test_pessoa_valido(criar_pessoa):
+def test_pessoa_id(criar_pessoa):
     assert criar_pessoa.id == 123
 
-def test_pessoa_valido(criar_pessoa):
+def test_pessoa_nome(criar_pessoa):
     assert criar_pessoa.nome == "Tainá"
+
+def test_pessoa_data_nascimento(criar_pessoa):
+    assert criar_pessoa.dataDeNascimento == "14/03/2006"
