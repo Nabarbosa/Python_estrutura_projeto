@@ -1,4 +1,4 @@
-from models.enums.unidade_federativa import Unidade_Federativa
+from atividade1.models.enums.unidade_federativa import Unidade_Federativa
 
 class Endereco:
     def __init__(self, logadouro: str, numero: str, complemento: str, cep: str, cidade: str, uf: Unidade_Federativa) -> None:
@@ -17,4 +17,4 @@ class Endereco:
                f"\nCEP: {self.cep}"
                f"\nCidade: {self.cidade}"
                f"\nUF: {self.uf.texto} / {self.uf.sigla}"
-               f"\n=====================================")
+               f"\n======================================")

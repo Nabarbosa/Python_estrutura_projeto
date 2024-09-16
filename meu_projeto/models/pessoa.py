@@ -1,5 +1,5 @@
-from models.enums.sexo import Sexo
-from models.endereco import Endereco
+from meu_projeto.models.enums.sexo import Sexo
+from meu_projeto.models.endereco import Endereco
 
 
 class Pessoa:
