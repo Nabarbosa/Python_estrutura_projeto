@@ -18,5 +18,6 @@ class Pessoa:
                f"\nData de Nascimento: {self.dataDeNascimento}"
                f"\nTelefone: {self.telefone}"
                f"\nE-mail: {self.email}"
-               f"\nSexo: {self.sexo.value}"
+               f"\nSexo: {self.sexo.texto} / {self.sexo.caracter}"
+               f"\n====================================="
                f"\n {self.endereco}")

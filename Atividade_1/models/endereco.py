@@ -10,10 +10,11 @@ class Endereco:
         self.uf = uf
 
     def __str__(self) -> str:
-        return(f"\n\n== Endereço =="
+        return(f"\n== Endereço =="
                f"\nLogadouro: {self.logadouro}"
                f"\nNúmero: {self.numero}"
                f"\nComplemento: {self.complemento}"
                f"\nCEP: {self.cep}"
                f"\nCidade: {self.cidade}"
-               f"\nUF: {self.uf.value}")
+               f"\nUF: {self.uf.texto} / {self.uf.sigla}"
+               f"\n=====================================")
